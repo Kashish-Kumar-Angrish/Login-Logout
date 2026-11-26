@@ -15,6 +15,8 @@
 3. From the `backend` folder, run `npm start`.
 
 The database and collection are created by MongoDB after the first successful signup.
+The API allows the local frontend origins `http://localhost:5173` and
+`http://localhost:5174`; set `FRONTEND_URL` to the origin of a deployed frontend.
 
 ## Endpoints
 
