@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { handleError, handleSuccess } from "../util";
+import API_BASE_URL from "../api";
 
 const Login = () => {  
 
@@ -26,7 +27,7 @@ const Login = () => {
     }
 
     try{
-      const url = "http://localhost:8080/auth/login";
+      const url = `${API_BASE_URL}/auth/login`;
       const response = await fetch(url, {
         method: "POST",
         headers:  {
